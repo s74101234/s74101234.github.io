@@ -7,135 +7,115 @@
         <meta name="author" content="" />
         <title>Yu-Cheng</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/custom_style.css" rel="stylesheet" />
+        <link href="libs/bootstrap@5.0.2/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <!-- <link href="css/custom_style.css" rel="stylesheet" /> -->
     </head>
     <body>
-        <div class='row'>
+
+        <!-- Top Layer -->
+        <div class="row">
+            <div class="col-md-12 mb-4 mt-4"></div>
+        </div>
+
+        <!-- Second Layer: Title -->
+        <div class="row">
+           <div class="col-md-3"></div>
+           <div class="col-md-1 d-flex justify-content-center align-items-center">
+                <img src="assets/img/personal-photo.jpg" class="rounded-circle img-fluid personal-photo">
+            </div>
+            <div class="col-md-5">
+                <h1 class="site-heading text-center text-faded d-lg-block">
+                    <p class="site-heading-upper">The Resume & Creations </p>
+                    <span class="site-heading-lower">of Yu-Cheng, Kuo</span>
+                </h1>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        
+        <!-- Layer 3: Navigation -->
+        <div class="row mb-5">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <nav class="navbar navbar-expand-lg navbar-light mainNav">
+              <div class="container-fluid">
+                <!-- Navbar Toggler Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Navbar Content -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mx-auto">
+                    <!-- Navbar Items -->
+                    <li class="nav-item fs-5 me-4">
+                      <a class="nav-link text-uppercase load-page" href="#" data-page="home.html">Home</a>
+                    </li>
+                    <li class="nav-item fs-5 me-4">
+                      <a class="nav-link text-uppercase load-page" href="#" data-page="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item fs-5 me-4">
+                      <a class="nav-link text-uppercase load-page" href="#" data-page="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item fs-5 me-4">
+                      <a class="nav-link text-uppercase load-page" href="#" data-page="research.html">Research</a>
+                    </li>
+                    <li class="nav-item fs-5 me-4">
+                      <a class="nav-link text-uppercase load-page" href="#" data-page="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item fs-5 me-4">
+                      <a class="nav-link text-uppercase load-page" href="#" data-page="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item fs-5 me-4">
+                      <a class="nav-link text-uppercase load-page" href="#" data-page="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+
+        <!-- Dynamic Content Section -->
+        <div class='row my-5'>
             <div class="col-md-1"></div>
             <div class="col-md-10">
-                <header>
-                    <div class="row">
-                        <div class="col-md-1"></div>
-                       <div class="col-3 col-md-2 d-flex justify-content-center align-items-center">
-                            <img src="assets/img/personal-photo.jpg" class="rounded-circle" alt="Personal Photo" id="personal-photo">
-                        </div>
-                        <div class="col-9 col-md-6">
-                            <h1 class="site-heading text-center text-faded d-lg-block">
-                                <p class="site-heading-upper">The Resume & Creations </p>
-                                <span class="site-heading-lower">of Yu-Cheng, Kuo</span>
-                            </h1>
-                        </div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-1"></div>
-                    </div>
-                </header>
-                <!-- Navigation-->
-                <nav class="navbar navbar-expand-lg navbar-light py-lg-2" id="mainNav">
-                  <div class="container">
-                    <div class="navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mx-auto">
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase load-page" href="#" data-page="home.html">Home</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase load-page" href="#" data-page="resume.html">Resume</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase load-page" href="#" data-page="experience.html">Experience</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase load-page" href="#" data-page="research.html">Research</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase load-page" href="#" data-page="skills.html">Skills</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase load-page" href="#" data-page="portfolio.html">Portfolio</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase load-page" href="#" data-page="contact.html">Contact</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-                <section id="dynamic-content" class="page-section clearfix">
+                <section id="dynamic-content">
                     <!-- load page -->
                 </section>
-                <footer class="footer text-faded text-center py-2 mb-4">
-                    <div class="container"><p class="m-0 small">Copyright &copy; Yu-Cheng, Kuo 2024</p></div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class='row mt-5'>
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <footer class="footer text-center py-2 my-5">
+                    <p class="m-0 small">Copyright &copy; Yu-Cheng, Kuo 2024</p>
                 </footer>
             </div>
             <div class="col-md-1"></div>
         </div>
-<<<<<<< HEAD
+
+        <!-- Loader -->
         <div id="loader" style="display: none;">
             <div class="spinner-border text-primary" role="status">
                 <span class="visually-hidden">Loading...</span>
-=======
-        <div class="col-md-12">
-          <p>　</p>
-        </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-8 text-dark text-left">
-          <p>
-          <h4>個人簡介：</h4></br>
-            <h6 style="padding-left: 2rem">
-          碩士畢業於國立中山大學資訊管理研究所，而大學則畢業於正修科技大學資訊管理系。</br>
-</br>
-	  在大學就讀的期間，我協助過多位老師進行科技部計畫以及進行工研院的產學合作計畫，並且在畢業時獲取系排第一。</br>
-</br>
-	  在碩士就讀的期間，我主要加入李偉柏教授的AI實驗室，並協助教授完成中山大學與高雄醫學院的合作研究計畫，</br>
-	  計畫內容：撰寫物件偵測技術應用在牙齒X光影像中，其使用語言為Tensorflow</br>
-</br>
-	  我的碩士畢業研究論文：多教師知識蒸餾方法應用於自我蒸餾模型訓練，</br>
-	  論文內容：將Self Distillation與Multi-Teacher Distillation進行結合，並優化其各自的優缺點，其使用語言為Pytorch。</br>
-	  關鍵字：深度學習、影像辨識、模型壓縮、知識蒸餾(Distillation)。</br>
-</br>
-	  畢業後在2022/04服完兵役，並且在2022/07進入工業技術研究院任職至今。</br>
-            </h6>
-          </p>
-        </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-12">
-          <p>　</p>
-        </div>
-        <div class="col-md-12 social-icons">
-          <a href="https://www.cakeresume.com/me/s74101234" target="_blank">
-            <i class="fab fa-cuttlefish"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/yu-cheng-kuo-76771b156/" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/s74101234" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=100000254002967" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://kuoyucheng.blogspot.com/" target="_blank">
-            <i class="fab fa-blogger-b"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center " id="resume">
-      <div class="row w-100 text-center">
-        <div class="col-md-12">
-          <h2 class="text-primary">
-            <span>Resume</span>
-          </h2>
-        </div>
-        <div class="col-md-12">
-          <p>　</p>
-        </div>
-        <div class="col-md-12 text-dark text-left">
-            <div  class="embed-responsive embed-responsive-1by1">
-            <iframe id="app-iframe" class="iframe-doc" src="https://drive.google.com/file/d/1F-778jtOqAgVTVh9JrZuuMNOEzHIZBSH/preview?usp=embed_googleplus" title="PDF Sample" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
->>>>>>> 2e8c80b031dcea223c73dccafcaab34ec7bf218e
             </div>
         </div>
     </body>
+
     <!-- Bootstrap core JS-->
     <script src="./libs/bootstrap@5.0.2/bootstrap.bundle.min.js"></script>
     <!-- JQuery core JS-->
     <script src="./libs/jquery@3.7.1/jquery.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+
     <script type="text/javascript">
         $(document).ready(function() {
             // Automatically load home.html when the page is loaded
@@ -166,4 +146,5 @@
             }
         });
     </script>
+    
 </html>
