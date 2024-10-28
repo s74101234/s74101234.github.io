@@ -1,20 +1,22 @@
+/* Global Styles for Page Section */
 .page-section {
-    /*padding: 6rem 0;*/
+    /* Removed default padding */
 }
 
 .page-section h2.section-heading {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Default font size for the main heading */
     margin-top: 0;
     margin-bottom: 1rem;
 }
 
 .page-section h3.section-subheading {
-    font-size: 1rem;
+    font-size: 1rem; /* Default font size for the subheading */
     font-weight: 400;
     font-style: italic;
     margin-bottom: 4rem;
 }
 
+/* Timeline Styles */
 .timeline {
     position: relative;
     padding: 0;
@@ -33,33 +35,36 @@
 }
 
 .timeline > li {
-    position: relative;
+    /*position: relative;*/
     min-height: 50px;
     margin-bottom: 50px;
+    overflow: hidden;
 }
 
+/* Timeline Panel */
 .timeline > li .timeline-panel {
-    position: relative;
+    /*position: relative;*/
     float: right;
     width: 100%;
     padding: 0 20px 0 100px;
     text-align: left;
+    overflow: hidden;
 }
 
+/* Custom Arrow Styles for Timeline Panel */
 .timeline > li .timeline-panel:before {
-    right: auto;
     left: -15px;
     border-right-width: 15px;
     border-left-width: 0;
 }
 
 .timeline > li .timeline-panel:after {
-    right: auto;
     left: -14px;
     border-right-width: 14px;
     border-left-width: 0;
 }
 
+/* Timeline Image */
 .timeline > li .timeline-image {
     position: absolute;
     z-index: 100;
@@ -74,21 +79,26 @@
     background-color: #ffc800;
 }
 
+/* Timeline Image Heading */
 .timeline > li .timeline-image h4 {
     font-size: 10px;
     line-height: 14px;
     margin-top: 12px;
 }
 
+/* Timeline Inverted Panel for Alternating Styles */
 .timeline > li.timeline-inverted > .timeline-panel {
     float: right;
     padding: 0 20px 0 100px;
     text-align: left;
+    overflow: hidden;
 }
 
+/* Timeline Heading and Body Text Styles */
 .timeline .timeline-heading h4 {
     margin-top: 0;
     color: inherit;
+    font-size: 1rem; /* Default font size */
 }
 
 .timeline .timeline-heading h4.subheading {
@@ -97,67 +107,94 @@
 
 .timeline .timeline-body > p {
     margin-bottom: 0;
+    font-size: 0.875rem; /* Default font size for body text */
 }
 
+/* Media Queries for Different Device Sizes */
+
+/* Medium Devices (Tablets, 768px and up) */
 @media (min-width: 768px) {
+    .page-section h2.section-heading {
+        font-size: 2rem; /* Smaller font size on tablets */
+    }
+    .page-section h3.section-subheading {
+        font-size: 0.9rem; /* Smaller font size on tablets */
+    }
     .timeline:before {
         left: 50%;
     }
-
     .timeline > li {
         min-height: 100px;
         margin-bottom: 100px;
     }
-
     .timeline > li .timeline-panel {
         float: left;
         width: 41%;
         padding: 0 20px 20px 30px;
         text-align: right;
     }
-
     .timeline > li .timeline-image {
         left: 50%;
         width: 100px;
         height: 100px;
         margin-left: -50px;
     }
-
     .timeline > li .timeline-image h4 {
         font-size: 13px;
         line-height: 18px;
         margin-top: 16px;
     }
-
     .timeline > li.timeline-inverted > .timeline-panel {
         float: right;
         padding: 0 30px 20px 20px;
         text-align: left;
     }
+    .timeline .timeline-heading h4 {
+        font-size: 1.25rem; /* Increased font size on tablets */
+    }
+    .timeline .timeline-body > p {
+        font-size: 1rem; /* Increased font size on tablets */
+    }
 }
 
+/* Large Devices (Desktops, 992px and up) */
 @media (min-width: 992px) {
+    .page-section h2.section-heading {
+        font-size: 2.75rem; /* Larger font size on desktops */
+    }
+    .page-section h3.section-subheading {
+        font-size: 1.25rem; /* Larger font size on desktops */
+    }
     .timeline > li {
         min-height: 150px;
     }
-
     .timeline > li .timeline-panel {
         padding: 0 20px 20px;
     }
-
     .timeline > li .timeline-image {
         width: 150px;
         height: 150px;
         margin-left: -75px;
     }
-
     .timeline > li .timeline-image h4 {
         font-size: 18px;
         line-height: 26px;
         margin-top: 30px;
     }
+    .timeline .timeline-heading h4 {
+        font-size: 1.5rem; /* Increased font size for headings on desktops */
+    }
+    .timeline .timeline-body > p {
+        font-size: 1.125rem; /* Increased font size for body text on desktops */
+    }
+}
 
-    .timeline > li.timeline-inverted > .timeline-panel {
-        padding: 0 20px 20px;
+/* Small Devices (Mobile Phones, 767px and down) */
+@media (max-width: 767px) {
+    .page-section h2.section-heading {
+        font-size: 1.75rem; /* Smaller font size for mobile */
+    }
+    .page-section h3.section-subheading {
+        font-size: 0.85rem; /* Smaller font size for mobile */
     }
 }
