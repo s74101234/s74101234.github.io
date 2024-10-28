@@ -1,0 +1,30 @@
+/* RWD CSS for tablet screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .personal-photo {
+        max-width: 15vw;
+    }
+
+    .site-heading {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .site-heading .site-heading-upper {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .site-heading .site-heading-lower {
+        font-size: 0.9rem;
+    }
+
+    .mainNav {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+}

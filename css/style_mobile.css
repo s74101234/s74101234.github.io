@@ -1,0 +1,38 @@
+/* RWD CSS for mobile screens */
+@media (max-width: 767px) {
+    .personal-photo {
+        max-width: 25vw;
+    }
+
+    .site-heading {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .site-heading .site-heading-upper {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .site-heading .site-heading-lower {
+        font-size: 0.8rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-item {
+        margin-bottom: 0.5rem;
+    }
+
+    .mainNav {
+        padding: 0.3rem;
+        font-size: 0.9rem;
+    }
+
+    .footer {
+        padding: 0.8rem;
+        font-size: 0.7rem;
+    }
+}
