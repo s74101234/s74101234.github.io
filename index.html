@@ -166,18 +166,15 @@ $(document).ready(function() {
         // Remove previously loaded CSS and JavaScript files
         removePreviousResources();
 
+        // Load specific CSS and JavaScript for this page based on the mapping
+        loadMappedResources(page);
+
         $.ajax({
             url: page,
             method: 'GET',
             success: function(data) {
-                // Inject the loaded content
-                $('#dynamic-content').html(data);
-
-                // Load specific CSS and JavaScript for this page based on the mapping
-                loadMappedResources(page);
-
-                // Hide the loader after content is loaded
-                $('#loader').hide();
+                $('#dynamic-content').html(data); // Inject the loaded content
+                $('#loader').hide(); // Hide the loader after content is loaded
             },
             error: function() {
                 $('#dynamic-content').html('<p>Sorry, unable to load content.</p>');
