@@ -22,15 +22,15 @@ This is a personal website to showcase my resume, experience, research, skills, 
 Below is the overall project directory structure for easy reference:
   ``` 
   s74101234.github.io/
-  ├── assets/
-  │   ├── img/              # Image resources used across the website
-  │   └── pdf/              # PDF documents (e.g., resume, publications)
+  ├── assets/               # Contains media and document resources for the website
+  │   ├── img/                # Image resources used across the website
+  │   └── pdf/                # PDF documents (e.g., resume, publications)
   ├── css/                  # Stylesheets for website styling
   ├── fonts/                # Font resources
   ├── js/                   # JavaScript files for added functionality
   ├── libs/                 # External libraries
-  │   ├── Bootstrap/        # Bootstrap CSS and JavaScript files
-  │   └── JQuery/           # jQuery files
+  │   ├── Bootstrap/          # Bootstrap CSS and JavaScript files
+  │   └── JQuery/             # jQuery files
   ├── pages/                # HTML files for individual pages
   └── index.html            # Main homepage (Home page)
 ```
