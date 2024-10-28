@@ -20,6 +20,7 @@ This is a personal website to showcase my resume, experience, research, skills, 
 ## Project Structure
 
 Below is the overall project directory structure for easy reference:
+  ``` 
   s74101234.github.io/
   ├── assets/
   │   ├── img/              # Image resources used across the website
@@ -32,3 +33,8 @@ Below is the overall project directory structure for easy reference:
   │   └── JQuery/           # jQuery files
   ├── pages/                # HTML files for individual pages
   └── index.html            # Main homepage (Home page)
+```
+
+## Contact Us
+If you have any questions or suggestions, feel free to reach out to us at: 
+s74101234@gmail.com
