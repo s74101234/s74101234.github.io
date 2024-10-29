@@ -13,10 +13,10 @@ $(document).ready(function() {
         //     css: ['css/Research_1.css', 'css/Research_2.css'],
         //     js: ['js/Research_1.js']
         // },
-        // 'skills.html': {
-        //     css: ['css/Skills_1.css'],
-        //     js: ['js/Skills_1.js']
-        // },
+        'skills.html': {
+            css: ['css/style_skills.css'],
+            js: []
+        },
         // 'portfolio.html': {
         //     css: ['css/Portfolio_1.css'],
         //     js: ['js/Portfolio_1.js']

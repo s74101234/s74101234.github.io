@@ -1,0 +1,194 @@
+/* 卡片陰影與基本樣式 */
+.shadow {
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15) !important;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #e3e6f0;
+    border-radius: .35rem;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+/* 字型粗體與顏色 */
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+.text-primary {
+    color: #4e73df !important;
+}
+
+.small {
+    font-size: 80%;
+}
+
+.text-danger {
+    color: #e74a3b !important;
+}
+
+.text-warning {
+    color: #f6c23e !important;
+}
+
+.text-info {
+    color: #36b9cc !important;
+}
+
+.text-success {
+    color: #1cc88a !important;
+}
+
+/* 排列、對齊與間距 */
+.m-0 {
+    margin: 0 !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.h6 {
+    font-size: 1rem;
+}
+
+/* 進度條樣式 */
+.progress {
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #eaecf4;
+    border-radius: .35rem;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #4e73df;
+    transition: width .6s ease;
+}
+
+.bg-danger {
+    background-color: #e74a3b !important;
+}
+
+.bg-warning {
+    background-color: #f6c23e !important;
+}
+
+.bg-info {
+    background-color: #36b9cc !important;
+}
+
+.bg-success {
+    background-color: #1cc88a !important;
+}
+
+/* 進度條動畫 */
+.progress-bar-animated {
+    animation: progress-bar-stripes 1s linear infinite;
+}
+
+@keyframes progress-bar-stripes {
+    from {
+        background-position: 1rem 0;
+    }
+
+    to {
+        background-position: 0 0;
+    }
+}
+
+.page-section {
+    /*padding: 1rem 0;*/
+}
+
+.page-section h2.section-heading,
+.page-section .section-heading.h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.page-section h3.section-subheading,
+.page-section .section-subheading.h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 4rem;
+}
+
+
+/* Responsive Font Sizes */
+
+/* Medium screens (tablets, 768px and up) */
+@media (max-width: 992px) {
+
+    .page-section h2.section-heading,
+    .page-section .section-heading.h2 {
+        font-size: 2rem;
+        /* Reduce font size for medium screens */
+    }
+
+    .page-section h3.section-subheading,
+    .page-section .section-subheading.h3 {
+        font-size: 0.9rem;
+    }
+}
+
+/* Small screens (phones, 576px and up) */
+@media (max-width: 768px) {
+
+    .page-section h2.section-heading,
+    .page-section .section-heading.h2 {
+        font-size: 1.75rem;
+        /* Further reduce for small screens */
+    }
+
+    .page-section h3.section-subheading,
+    .page-section .section-subheading.h3 {
+        font-size: 0.85rem;
+    }
+}
+
+/* Extra small screens (small phones, less than 576px) */
+@media (max-width: 576px) {
+
+    .page-section h2.section-heading,
+    .page-section .section-heading.h2 {
+        font-size: 1.5rem;
+        /* Smallest font size for very small screens */
+    }
+
+    .page-section h3.section-subheading,
+    .page-section .section-subheading.h3 {
+        font-size: 0.75rem;
+    }
+}
