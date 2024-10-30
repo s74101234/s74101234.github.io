@@ -41,17 +41,16 @@ $(document).ready(function() {
     // Function to dynamically load pages using jQuery's ajax method
     function loadPage(page) {
         $('#loader').show(); // Show the loader
-
-        // Remove previously loaded CSS and JavaScript files
-        removePreviousResources();
-
-        // Load specific CSS and JavaScript for this page based on the mapping
-        loadMappedResources(page);
-
         $.ajax({
             url: page,
             method: 'GET',
             success: function(data) {
+                // Remove previously loaded CSS and JavaScript files
+                removePreviousResources();
+
+                // Load specific CSS and JavaScript for this page based on the mapping
+                loadMappedResources(page);
+
                 $('#dynamic-content').html(data); // Inject the loaded content
                 $('#loader').hide(); // Hide the loader after content is loaded
             },
