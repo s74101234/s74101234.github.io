@@ -48,7 +48,7 @@
 }
 
 .mainNav {
-    background-color: white;
+    /*background-color: white;*/
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     font-family: "Raleway";
@@ -57,9 +57,13 @@
 .footer {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
 }
 
 #dynamic-content {
     padding: 1rem;
+}
+
+body {
+    background-color: #fff;
 }

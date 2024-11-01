@@ -18,13 +18,17 @@
 .card-header {
     padding: .75rem 1.25rem;
     margin-bottom: 0;
-    background-color: #f8f9fc;
+    /*background-color: #e7f1ff;*/
+    /*background-color: #fdf6e3;*/
+    background-color: #e6f7e6;
+    /*background-color: #f3e6ff;*/
     border-bottom: 1px solid #e3e6f0;
 }
 
 .card-body {
     flex: 1 1 auto;
     padding: 1.25rem;
+    background-color: #fffef3;
 }
 
 /* 字型粗體與顏色 */

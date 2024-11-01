@@ -33,7 +33,8 @@
     width: 2px;
     margin-left: -1.5px;
     content: "";
-    background-color: #e9ecef;
+    /*background-color: #e9ecef;*/
+    background-color: #ffd07e;
 }
 
 .timeline>li {
@@ -76,7 +77,8 @@
     margin-left: 0;
     text-align: center;
     color: white;
-    border: 7px solid #e9ecef;
+    /*border: 7px solid #e9ecef;*/
+    border: 7px solid #fbdeac;
     border-radius: 100%;
     background-color: #ffc800;
 }
