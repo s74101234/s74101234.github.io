@@ -1,6 +1,10 @@
 $(document).ready(function() {
     // Mapping object to map each page to corresponding CSS and JavaScript files
     const pageResourceMapping = {
+        'home.html': {
+            css: ['css/style_home.css'],
+            js: ['']
+        },
         'resume.html': {
             css: ['css/style_resume.css'],
             js: ['js/resume_pdfobject.js']
