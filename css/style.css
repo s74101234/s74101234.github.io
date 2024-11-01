@@ -2,9 +2,10 @@
 
 @charset "UTF-8";
 
+/* Font face declarations */
 @font-face {
     font-family: 'GamaHand';
-    /*src: url('../fonts/GamaHand/Gama Hand.ttf') format('truetype');*/
+    /* Source for GamaHand font in OpenType format */
     src: url('../fonts/GamaHand/Gama Hand.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
@@ -12,58 +13,187 @@
 
 @font-face {
     font-family: 'Mariyam';
-    /*src: url('../fonts/Mariyam/Mariyam.ttf') format('truetype');*/
+    /* Source for Mariyam font in OpenType format */
     src: url('../fonts/Mariyam/Mariyam.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
+/* Styling for personal photo */
 .personal-photo {
-    max-width: 8vh;
-    height: auto;
+    max-width: 14vh; /* Maximum width set to 8% of viewport height */
+    height: auto; /* Height adjusts automatically to maintain aspect ratio */
 }
 
+/* Site heading styles */
 .site-heading {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    /*text-transform: uppercase;*/
-    /*line-height: 1;*/
-    font-family: "Raleway";
-    font-weight: 500;
-
+    margin-top: 4rem; /* Top margin of 4 root em units */
+    margin-bottom: 4rem; /* Bottom margin of 4 root em units */
+    /* text-transform: uppercase; */ /* Uncomment to make text uppercase */
+    /* line-height: 1; */ /* Uncomment to set line height */
+    font-family: "Raleway"; /* Font family set to Raleway */
+    font-weight: 500; /* Medium font weight */
 }
 
 .site-heading .site-heading-upper {
-    font-size: 3rem;
-    font-weight: 400;
-    line-height: 3rem;
+    font-size: 3rem; /* Font size set to 3 root em units */
+    font-weight: 400; /* Normal font weight */
+    line-height: 3rem; /* Line height set to match font size */
 }
 
 .site-heading .site-heading-lower {
-    display: block;
-    font-size: 1rem;
-    font-weight: 200;
-    font-family: 'GamaHand';
-    /*font-family: 'Mariyam';*/
+    display: block; /* Display as block element */
+    font-size: 1rem; /* Font size set to 1 root em unit */
+    font-weight: 200; /* Light font weight */
+    font-family: 'GamaHand'; /* Font family set to GamaHand */
+    /* font-family: 'Mariyam'; */ /* Alternative font family */
 }
 
+/* Navigation bar styles */
 .mainNav {
-    /*background-color: white;*/
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    font-family: "Raleway";
+    /* background-color: white; */ /* Uncomment to set background color to white */
+    border-top: 1px solid black; /* Top border */
+    border-bottom: 1px solid black; /* Bottom border */
+    font-family: "Raleway"; /* Font family set to Raleway */
 }
 
+/* Footer styles */
 .footer {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    /*background-color: #ffffff;*/
+    border-top: 1px solid black; /* Top border */
+    border-bottom: 1px solid black; /* Bottom border */
+    /* background-color: #ffffff; */ /* Uncomment to set background color to white */
 }
 
+/* Dynamic content padding */
 #dynamic-content {
-    padding: 1rem;
+    padding: 1rem; /* Padding of 1 root em unit */
 }
 
+/* Body background color */
 body {
-    background-color: #fff;
+    background-color: #fff; /* White background */
+}
+
+/* Responsive Design: Adjust styles for tablets and mobile devices */
+@media (max-width: 1024px) {
+    /* Styles for tablets */
+
+    .personal-photo {
+        max-width: 10vh; /* Increase max-width for larger viewports */
+    }
+
+    .site-heading {
+        margin-top: 3rem; /* Reduce top margin */
+        margin-bottom: 3rem; /* Reduce bottom margin */
+    }
+
+    .site-heading .site-heading-upper {
+        font-size: 2.5rem; /* Reduce font size */
+        line-height: 2.5rem; /* Adjust line height accordingly */
+    }
+
+    .site-heading .site-heading-lower {
+        font-size: 1.2rem; /* Slightly increase font size for readability */
+    }
+
+    .mainNav {
+        font-size: 0.9rem; /* Adjust navigation font size */
+    }
+
+    .footer {
+        padding: 1rem; /* Add padding for better spacing */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Styles for mobile devices */
+
+    .personal-photo {
+        max-width: 12vh; /* Further increase max-width for smaller screens */
+    }
+
+    .site-heading {
+        margin-top: 2rem; /* Further reduce top margin */
+        margin-bottom: 2rem; /* Further reduce bottom margin */
+    }
+
+    .site-heading .site-heading-upper {
+        font-size: 2rem; /* Further reduce font size */
+        line-height: 2rem; /* Adjust line height accordingly */
+    }
+
+    .site-heading .site-heading-lower {
+        font-size: 1rem; /* Maintain readability */
+    }
+
+    .mainNav {
+        font-size: 0.8rem; /* Reduce navigation font size for smaller screens */
+    }
+
+    /* Adjust navigation layout for mobile */
+    .mainNav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center; /* Center align navigation items */
+    }
+
+    .mainNav li {
+        margin: 0.5rem 0; /* Add vertical spacing between items */
+    }
+
+    .footer {
+        padding: 0.5rem; /* Reduce padding for smaller screens */
+        text-align: center; /* Center align footer content */
+    }
+
+    /* Adjust dynamic content padding */
+    #dynamic-content {
+        padding: 0.5rem; /* Reduce padding for mobile devices */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Styles for very small mobile devices */
+
+    .personal-photo {
+        max-width: 14vh; /* Further adjust max-width */
+    }
+
+    .site-heading {
+        margin-top: 1.5rem; /* Further reduce top margin */
+        margin-bottom: 1.5rem; /* Further reduce bottom margin */
+    }
+
+    .site-heading .site-heading-upper {
+        font-size: 1.8rem; /* Further reduce font size */
+        line-height: 1.8rem; /* Adjust line height accordingly */
+    }
+
+    .site-heading .site-heading-lower {
+        font-size: 0.9rem; /* Slightly reduce font size */
+    }
+
+    .mainNav {
+        font-size: 0.7rem; /* Further reduce navigation font size */
+    }
+
+    /* Optimize navigation layout */
+    .mainNav ul {
+        flex-direction: column; /* Ensure vertical stacking */
+        align-items: center; /* Center align navigation items */
+    }
+
+    .mainNav li {
+        margin: 0.3rem 0; /* Reduce vertical spacing between items */
+    }
+
+    .footer {
+        padding: 0.3rem; /* Further reduce padding */
+        text-align: center; /* Center align footer content */
+        font-size: 0.8rem; /* Reduce footer text size */
+    }
+
+    /* Adjust dynamic content padding */
+    #dynamic-content {
+        padding: 0.3rem; /* Further reduce padding for very small screens */
+    }
 }
