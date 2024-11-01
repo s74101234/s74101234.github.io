@@ -9,10 +9,10 @@ $(document).ready(function() {
             css: ['css/style_experience.css'],
             js: []
         },
-        // 'research.html': {
-        //     css: ['css/Research_1.css', 'css/Research_2.css'],
-        //     js: ['js/Research_1.js']
-        // },
+        'research.html': {
+            css: ['css/style_research.css'],
+            js: []
+        },
         'skills.html': {
             css: ['css/style_skills.css'],
             js: []
