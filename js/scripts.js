@@ -21,10 +21,10 @@ $(document).ready(function() {
             css: ['css/style_skills.css'],
             js: []
         },
-        // 'portfolio.html': {
-        //     css: ['css/Portfolio_1.css'],
-        //     js: ['js/Portfolio_1.js']
-        // },
+        'portfolio.html': {
+            css: ['css/style_portfolio.css'],
+            js: []
+        },
         'contact.html': {
             css: ['css/style_contact.css'],
             js: []
