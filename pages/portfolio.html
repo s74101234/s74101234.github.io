@@ -14,24 +14,28 @@
             <div class="card shadow mb-4">
                 <div class="card-header py-3 d-flex justify-content-between align-items-center"
                     data-bs-toggle="collapse" data-bs-target="#card16" style="cursor: pointer;">
-                    <h6 class="m-0 fw-bold text-primary">面板演算法優化</h6>
-                    <span class="text-muted small">2025/12 – 至今</span>
+                    <h6 class="m-0 fw-bold text-primary">LCD 面板演算法優化</h6>
+                    <span class="text-muted small">2025/12 – 2026/02</span>
                 </div>
                 <div id="card16" class="collapse">
                     <div class="card-body">
-                        <p><strong>專案簡述：</strong>應用 AI 技術於面板相關演算法優化，目前專案仍在開發階段，相關技術內容暫不對外透露。</p>
+                        <p><strong>專案簡述：</strong>針對 LCD 單一背光顯示流程進行影像重組與亮度控制優化。</p>
 
                         <p><strong>貢獻：</strong></p>
                         <ul>
-                            <li>相關內容暫不對外透露。</li>
+                            <li>設計單一背光控制演算法：基於 RGB 輸入影像估計亮度需求，並透過平滑與 Tone Mapping 處理生成符合面板物理限制的控制訊號。</li>
+                            <li>建立畫質量化評估方法：結合 SSIM 與自定義 LCM（Local Contrast Measure）指標，量化分析重建影像與原始影像之結構與局部對比差異，用於偵測光暈與對比流失情形。</li>
                         </ul>
 
                         <p><strong>工作內容：</strong></p>
                         <ul>
-                            <li>相關內容暫不對外透露。</li>
+                            <li>開發並優化 LCD 單一背光影像重組前處理流程，包含亮度估計、平滑處理與 Tone Mapping。</li>
+                            <li>針對重建結果可能產生的過曝、對比下降與光暈現象進行參數調校與視覺品質改善。</li>
+                            <li>設計量化測試流程，透過 SSIM 與 LCM 指標對比原始影像與重建影像，評估畫質保真度。</li>
+                            <li>整理測試結果與分析報告，作為演算法迭代與驗證依據。</li>
                         </ul>
 
-                        <p><strong>專業技術：</strong>相關內容暫不對外透露。</p>
+                        <p><strong>專業技術：</strong>LCD 顯示演算法、影像處理、量化指標建置</p>
                     </div>
                 </div>
             </div>
