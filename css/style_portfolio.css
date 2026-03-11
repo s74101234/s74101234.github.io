@@ -1,3 +1,29 @@
+/* Portfolio Card Thumbnail 圖片樣式 */
+.portfolio-thumb {
+    height: 48px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+}
+
+.portfolio-thumb:hover {
+    transform: scale(1.08);
+}
+
+@media (max-width: 992px) {
+    .portfolio-thumb {
+        height: 36px;
+    }
+}
+
+@media (max-width: 576px) {
+    .portfolio-thumb {
+        height: 28px;
+    }
+}
+
 /* 卡片陰影與基本樣式 */
 .shadow {
     box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15) !important;
