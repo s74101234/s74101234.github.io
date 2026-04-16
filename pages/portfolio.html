@@ -20,31 +20,49 @@
                 <div id="card17" class="collapse">
                     <div class="card-body">
                         <div class="row align-items-center">
-                            <div class="col-12 col-md-9">
-                                <p><strong>專案簡述：</strong>個人開發之本地端 AI 相片管理應用程式，以完全離線為核心設計，所有資料與模型皆在本地端執行，確保隱私與效能。</p>
+                            <div class="col-12 col-md-8">
+                                <p><strong>專案簡述：</strong>個人開發之本地端 AI 相片管理應用程式，所有資料與模型均在本地端執行，確保隱私安全。</p>
                                 <p><strong>貢獻：</strong></p>
                                 <ul>
-                                    <li>系統架構設計：規劃前後端架構（Tauri 2.0 + Vue 3 / FastAPI），建構前後端分離之桌面應用。</li>
-                                    <li>AI 搜尋與語意索引：建置 CLIP 視覺向量索引（Phase 1）與 VLM 語意向量索引（Phase 2），支援自然語言相片搜尋。</li>
-                                    <li>Agent Pipeline 設計：設計 Agent 架構（QueryEnhancement / RAG Decision / Tool Selection / Result Summary），實現 AI 自主決策與工具調用流程。</li>
-                                    <li>向量資料庫建置：使用 Qdrant 建立本地向量資料庫，設計 RAG 機制。</li>
-                                    <li>MCP 工具整合：實作多項 MCP 工具（搜尋、移動、分類、刪除、還原等），搭配 PathGuard 確保檔案操作安全性。</li>
-                                    <li>本地化支援：以 vue-i18n 實作英文與繁體中文雙語介面。</li>
+                                    <li>系統架構設計： 規劃前後端架構（Tauri 2.0 + Vue 3 / FastAPI），建構前後端分離之桌面應用，以 SSE 串流即時傳遞推論狀態。</li>
+                                    <li>背景運作流程設計： Phase 1 以 VLM 生成照片描述並結合 OCR 文字建立 Semantic Embedding；Phase 2 為每張影像建立 Visual Embedding。</li>
+                                    <li>AI 雙語意搜尋流程設計： 整合語意向量與視覺向量，以自然語言同時檢索兩個通道並融合結果，回傳最相關影像。</li>
+                                    <li>AI Chat 流程設計： 採用 ReAct 架構，設計兩段式 Prompt 實現工具選擇與執行，搭配規則型 Router 加速意圖判斷。</li>
+                                    <li>資料庫建置： 使用 Qdrant 建立本地向量資料庫。</li>
+                                    <li>MCP 工具整合： 實作多項 MCP 工具（語意搜尋、條件篩選、移動、分類、刪除、還原等）。</li>
+                                    <li>本地化支援： 以 vue-i18n 實作英文與繁體中文雙語介面。</li>
                                 </ul>
                                 <p><strong>工作內容：</strong></p>
                                 <ul>
                                     <li>前端：Tauri 2.0 + Vue 3 + Pinia 狀態管理、SSE 串流整合、響應式 Gallery / Search / Chat 介面開發。</li>
                                     <li>後端：FastAPI 服務架構、Qdrant 本地向量資料庫整合開發。</li>
-                                    <li>AI Chat Agent pipeline 設計與 function calling（MCP tools）整合。</li>
+                                    <li>背景運作流程設計：分兩階段自動為影像建立語意向量與視覺向量索引。</li>
+                                    <li>AI Chat Agent Pipeline 設計：ReAct 架構、兩段式 Prompt、規則型 Router、MCP 工具調用。</li>
                                     <li>本地檔案操作系統（move / trash / restore / undo）設計與實作。</li>
                                     <li>多語系（i18n）與設定管理設計。</li>
                                 </ul>
-                                <p><strong>專業技術：</strong>PyTorch、深度學習、VLM、Qdrant、RAG、Agent、MCP、Tauri 2.0、Vue 3</p>
+                                <p><strong>專業技術：</strong>PyTorch、深度學習、VLM、CLIP、Qdrant、ReAct Agent、MCP、Tauri 2.0、Vue 3</p>
                             </div>
-                            <div class="col-12 col-md-3 text-end">
-                                <video src="../assets/img/portfolio/PicVault.mp4"
-                                    class="portfolio-thumb" style="max-width:100%;height:auto;"
-                                    autoplay loop muted playsinline></video>
+                            <div class="col-12 col-md-4">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <video src="../assets/img/portfolio/PicVault.mp4"
+                                            class="portfolio-thumb img-fluid rounded" style="width:100%;height:auto;cursor:pointer;"
+                                            autoplay loop muted playsinline></video>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="../assets/img/portfolio/PicVault_Overview.png"
+                                            class="portfolio-thumb img-fluid rounded" style="width:100%;height:auto;cursor:pointer;" alt="PicVault Overview" />
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="../assets/img/portfolio/PicVault_Pipelines.png"
+                                            class="portfolio-thumb img-fluid rounded" style="width:100%;height:auto;cursor:pointer;" alt="PicVault Pipelines" />
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="../assets/img/portfolio/PicVault_ChatFlow.png"
+                                            class="portfolio-thumb img-fluid rounded" style="width:100%;height:auto;cursor:pointer;" alt="PicVault ChatFlow" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
